@@ -129,10 +129,10 @@ echo '</pre>';
 </style>
 <form action="#" method="post">
     <label for=""> Начало диапазона
-        <input type="text" name="start" placeholder="<?=$_POST['start']?>">
+        <input type="number" name="start" placeholder="<?=$_POST['start']?>" min="100" max="10000">
     </label>
     <label for=""> Конец диапазона
-        <input type="text" name="end" placeholder="<?=$_POST['end']?>">
+        <input type="number" name="end" placeholder="<?=$_POST['end']?>" min="200" max="99999">
     </label>
     <button type="submit">Отправить</button>
 </form>
